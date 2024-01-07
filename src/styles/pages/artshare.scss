@@ -1,0 +1,68 @@
+@import "../mixin.scss";
+
+
+.artShare_container{
+    background-color: burlywood;
+    padding : 10px; 
+
+    button{
+      cursor: pointer;     
+    }
+
+    .artShare_box{
+        width : 90%;
+        border : 0.15em solid black;  
+        padding : 10px; 
+        margin : auto; 
+        position : center; 
+
+        #artShare_contents{
+            background-color: rgb(237, 225, 210);
+            border : 0.1em solid black;  
+            margin : 10px; 
+            display: inline-block;
+            padding : 5px; 
+
+            img{
+              width: 100%;
+          }
+          
+            button{
+                color : rgb(255, 252, 252); 
+                background: black;
+                width : 100%;
+                height: 40%;
+                position: bottom; 
+               
+                &:hover{
+                    background-color :rgb(0, 0, 0);
+                    color :rgb(233, 168, 226);
+                 }
+
+            }
+     
+        }
+
+    }
+
+}
+
+
+@include desktop { 
+    #artShare_contents{
+      width: 28%;
+     } 
+}
+  
+  @include tablet { 
+    #artShare_contents{
+      width: 35%;
+     }
+    }
+  
+  @include mobile { 
+   #artShare_contents{
+    width: 40%;
+   }
+  }
+  

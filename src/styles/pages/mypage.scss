@@ -1,0 +1,61 @@
+
+.mypage_container{
+    width: 35rem;
+    padding : 20px; 
+
+    button{
+        background-color: #3c440e; 
+        border: none;
+        color: white;
+        padding: 4px 8px; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 11px;
+        margin-left: 1px;
+        cursor: pointer; 
+        
+        &:hover{
+         background-color: #586416; 
+         cursor: pointer; 
+        }
+    }
+
+    
+}
+
+#booklikes{
+    display: inline-block;
+    position: relative; 
+}
+
+
+#booklink{
+
+    position : absolute; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    
+
+    &:hover{
+        overflow: visible;
+        opacity: 10;
+        background-color:rgba(0, 0, 0, 0.5);
+        font-size: 13px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        }
+
+        a{ text-decoration: none; }
+     }
+
+
+
+    
+
+
+

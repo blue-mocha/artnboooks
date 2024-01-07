@@ -1,0 +1,70 @@
+@import "../mixin.scss";
+
+
+.signup_container{
+     background-color: burlywood;
+     margin : auto;     
+   
+
+    .signup_Form{
+        width : 100%; 
+        border : 0.1em solid black;  
+        background-color: rgb(255, 255, 255);
+        
+        th, td{
+            width : auto; 
+            word-break: keep-all; 
+            padding-bottom: 10px;
+            //background-color: bisque;
+           
+        }
+        
+        img{
+            border : 0.1em solid black;  
+        }
+        
+        button{
+            background: rgb(0, 0, 0);
+            color : rgb(255, 255, 255); 
+            width: 75px;  
+            height: 24px;
+            margin-left: 2px;
+            cursor: pointer; 
+
+            &:hover{
+                background-color :rgb(0, 0, 0);
+                color :rgb(227, 149, 149);
+             }
+            
+        }
+
+        #bottom_button{
+
+            background: black;
+            width: 200px;
+            height: 35px;
+            margin-left: 2px;
+            position: bottom; 
+
+            &:hover{
+                background-color :rgb(0, 0, 0);
+                color :rgb(255, 193, 37);
+             }
+
+        }
+        
+        }
+
+
+}
+
+
+@include desktop { 
+
+    .signup_container{
+       width : 85%;
+       padding : 20px;
+    }
+}
+    
+

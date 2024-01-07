@@ -1,0 +1,51 @@
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+
+
+@mixin desktop {
+  @media  (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+  
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+   @media (max-width: #{$breakpoint-tablet - 1px}) {
+     @content;
+   }
+ }
+ 
+
+ @mixin button($bg,$color,$width, $height) {
+  background: $bg;
+  color : $color; 
+  width: $width;  
+  height: $height;
+}
+
+
+@mixin scrollbar{
+  .app::-webkit-scrollbar {
+    width: 10px;
+  }
+  .app::-webkit-scrollbar-thumb {
+    background-color: #7193dd;
+    border-radius: 10px;
+  }
+  .app::-webkit-scrollbar-track {
+    background-color: rgb(179, 103, 103);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+}
+
+
+
+ 

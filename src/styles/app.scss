@@ -1,0 +1,55 @@
+@import "mixin.scss";
+
+
+@include desktop {
+   .app{
+      width: 83%;
+      margin: auto;  
+   }
+   .contents{
+      background-color: burlywood;
+      height: auto;
+      // 공통사항(중복사항) 
+      // ex) h3/ button/ 
+     }
+ }
+
+ 
+ @include tablet {
+   .app{
+      width: 98%;
+      margin: auto;
+   }
+   .contents{
+   background-color: burlywood;
+   height: auto;
+  }
+ }
+
+
+@include mobile { 
+   .app{  
+      width: 100%;
+   }
+
+   .contents{
+      width: 100%;
+      height: auto;
+      background-color: burlywood;
+      
+     
+     } 
+ }
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+

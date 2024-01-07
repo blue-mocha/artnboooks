@@ -1,0 +1,121 @@
+@import "../mixin.scss";
+
+
+.header{
+   width : 100%; 
+   background-color: rgb(255, 255, 255);    
+   height: 150px; 
+   border-bottom: 1.5rem solid rgb(204, 0, 61); 
+}
+
+.header_top{
+  background-color: black;  
+ 
+}
+
+.header_login{
+   display: inline-block;
+   width : auto;
+   height: 30px;
+   background-color: black;  
+   color : white ; 
+
+      
+    #logined{
+      a{
+        vertical-align: middle;  
+        text-decoration: none; 
+        font-size : 0.5rem ;
+        color : #ffffff; 
+        &:hover {
+          color : rgb(197, 210, 95); 
+        }
+      }
+}
+
+     h4 {
+      font : bold 0.8rem Malgun Gothic; 
+      display: inline-block;
+      height: 30px;
+      padding: 0;
+      margin : 0;
+     }
+    
+
+     a{
+      vertical-align: middle;  
+      text-decoration: none; 
+      font-size : 0.5rem ;
+      color : #ffffff; 
+       &:hover {
+         color : red; 
+       }
+     }
+
+     b{
+       vertical-align: top;
+       color : rgb(218, 129, 156); 
+     }
+
+     img{
+       vertical-align: middle;
+       margin-left: 5px;
+       margin-bottom: 2px;
+     }
+     
+
+     div{
+       margin: 5px;  
+       height: 30px;
+     }
+}
+
+.hearder_buttons{
+  //display: inline-block;
+  float: right; 
+  background-color: black;  
+  height: 30px;
+
+  button{
+    vertical-align: top;
+    margin-top: 5px;
+    margin-right: 12px;
+    background-color: white;
+    color : black; 
+    border: black;
+
+    &:hover{
+       cursor: pointer; 
+      }
+   }
+
+  img{
+    margin: 5px; 
+    &:hover{
+      cursor: pointer; 
+      
+    } 
+  }
+}
+
+.header_logo{
+    color : black ; 
+    clear : both; 
+    span{
+        color : red;
+      }
+    a {  
+      font-family : 'EncodeSansSC';  
+      font-size : 2em ;
+      text-decoration: none; 
+      color : black
+      
+     }   
+}
+
+
+
+
+
+
+

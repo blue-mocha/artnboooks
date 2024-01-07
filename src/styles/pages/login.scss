@@ -1,0 +1,118 @@
+@import "../mixin.scss";
+
+
+.login_container{
+    background-color: burlywood;
+    padding : 20px; 
+
+    .login_box{
+        margin : auto; 
+        background-color: rgb(233, 222, 206);
+        padding : 10px; 
+        border : 0.1em solid black;  
+        
+        table{
+          margin : auto; 
+          font : 1.02em Malgun Gothic;
+
+          input{
+            padding : 3px; 
+            width: 95%; 
+          }
+
+          #check_box{
+            width: 10%; 
+          }
+          
+        }
+
+        h1{
+         text-align : center; 
+         height: 60px;
+        }
+
+        button{
+            cursor: pointer;
+            border : 0.1em solid black;  
+            color : rgb(0, 0, 0); 
+            background: rgb(255, 255, 255);
+            width : 100%;
+            height: 34px;
+            position: bottom; 
+           
+           
+            &:hover{
+                background-color :rgb(0, 0, 0);
+                color :rgb(231, 255, 195);
+             }
+        }
+
+        #login_button{
+         
+            color : rgb(255, 255, 255); 
+            background: rgb(204, 0, 61); 
+
+
+        }
+
+
+        .idPw_finder{
+            font : 1.02em Malgun Gothic;
+
+           
+           
+            button{
+                cursor: pointer;
+                border : 0.1em solid black;  
+                color : rgb(255, 255, 255); 
+                background: rgb(0, 0, 0);
+                width : 100%;
+                height: 25px;
+                position: center; 
+                margin-top: 20px;
+               
+                &:hover{
+                    background-color :rgb(0, 0, 0);
+                    color :rgb(255, 134, 227);
+                 }
+            }
+    
+
+
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@include desktop { 
+    .login_box{
+        width: 50%;
+     }
+    }
+  
+  @include tablet { 
+     .login_box{
+        width: 60%;
+     }
+
+    }
+  
+  @include mobile { 
+    .login_box{
+        width: 80%;
+     }
+  
+    
+   }
+
+  

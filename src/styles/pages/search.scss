@@ -1,0 +1,110 @@
+//도서검색 
+@import "../mixin.scss";
+
+
+.book_container{
+  padding: 3%;
+  word-break: keep-all; 
+  margin : auto; 
+  button{
+    cursor: pointer;    
+  }
+
+  .search_box{
+    text-align: middle;
+  
+    h3{
+      font: 4em; 
+    }
+
+    input {
+      width: 70%; 
+      height: auto;
+      margin-bottom: 1%;
+    }
+  
+    button{
+      @include button(black,white,75px,25px);
+      display: left; 
+    }
+
+    #recent_keyword{
+      background: white;
+      color : rgb(0, 0, 0); 
+      width: auto;  
+      height: auto;
+      display: left; 
+      margin : 5px;     
+      &:hover{
+        font-weight: bolder;
+      } 
+      &:active{
+        color : rgb(235, 50, 50); 
+      }
+
+    }
+  }
+  
+  .search_contents{
+
+    text-align:left;
+    vertical-align: middle;
+    padding : 1%; 
+    width: 90%;
+
+     table{
+      border-collapse: collapse;
+
+       #table_title{
+        width: 70px;
+       }
+
+        #search_book{
+          border-bottom : 0.05em solid black;
+        }
+    
+        #bookImage{
+          width: 120px;
+          height: 160px;
+          cursor : pointer;
+          border: 0.05em solid rgb(2, 2, 2);
+        }
+
+        button{
+          margin-top: 6px;
+          padding: 2px;
+        }
+     }
+
+  }
+ 
+}
+
+
+@include desktop { 
+
+  .book_container{
+     width : 75%;
+     padding : 40px;
+
+     #bookImage{
+      width: 90%;
+     }
+  }
+
+}
+
+
+@include mobile { 
+
+  .book_container{
+     width : 100%;
+     
+
+     #bookImage{
+      width: 100%;
+     }
+  }
+
+}
+

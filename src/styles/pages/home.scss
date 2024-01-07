@@ -1,0 +1,165 @@
+//메인 홈 
+@import "../mixin.scss";
+
+.home{
+    margin-left: 5px; 
+    margin-bottom: 10px;
+    
+    button{
+        cursor: pointer;     
+    }
+
+    .recommanded{
+        padding-top: 10px;
+       
+
+        h3 {
+            span{
+            font-size : 0.8em;} 
+        }
+
+        #recent_book{
+           
+            position: relative; 
+            display: inline-block;
+            border: 1px solid rgb(2, 2, 2);
+            background-color: rgb(224, 162, 80);
+
+            img{
+                width: 100%;
+            }
+
+        }
+        
+        #recentBook_like{
+        
+            position : absolute; 
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            
+            &:hover{
+             
+                overflow: visible;
+                opacity: 10;
+                background-color:rgba(0, 0, 0, 0.5);
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                
+            }
+        }          
+                
+    }
+
+    .chatRoom{
+        //border: 1px solid rgb(2, 2, 2);
+        //padding-bottom: 10px;
+        //width: 90%;
+       // background-color: rgb(251, 251, 251);
+    }
+
+    .review_best{
+        //width : 90%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        
+        table{
+            border: 1px solid rgb(2, 2, 2);
+            text-align: center;
+     
+
+            #title{
+                background-color: rgb(224, 162, 80);
+                color : rgb(15, 6, 6); 
+                font-weight : bold;
+            }
+            #post_title{
+                text-align: left;
+                margin-left: 5px;
+            }
+
+            a{
+                font : 1em Malgun Gothic;
+            
+                &:link{
+                    color: black;   
+                    text-decoration: none; 
+                }
+                &:visited{
+                    color : black; 
+                    text-decoration: none; 
+                }
+                &:hover{
+                    color: rgb(44, 44, 44);  
+                    box-shadow: 0 -6px rgba(222, 222, 74, 0.3) inset;
+                }
+            }
+            th{
+            border-bottom : 1px solid black;  
+            }
+        
+        }   
+        
+    }   
+    
+
+}
+
+
+@include desktop {
+
+    .home{
+      padding-left: 10px;
+
+      #recent_book{
+        width: 9%; 
+      }
+
+      .review_best{
+        width: 95%;
+        
+        table{
+         position: center;
+         width: 95%;
+        }
+        
+      }
+    }
+  
+  }
+ 
+  
+  @include tablet{
+
+    .home{
+        #recent_book{
+          width: 12%; 
+        }
+      .review_best{
+          width: 100%;
+      }
+
+      table{
+        position: center;
+        width: 95%;
+       }
+    }
+  }
+ 
+ 
+ @include mobile { 
+
+     .home{
+        #recent_book{
+          width: 18%; 
+        }
+      .review_best{
+          width: 100%;
+      }
+    }
+
+  }
+  
